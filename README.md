@@ -33,6 +33,6 @@ under the terms specified in the [LICENSE] file.
 Razorpay iOS Sample App is maintained and funded by Razorpay Software Pvt. Ltd.
 The names and logos for Razorpay are trademarks of Razorpay Software Pvt. Ltd.
 
-We love open source software!
+We :heart: open source software!
 See [our other supported plugins / SDKs](https://github.com/razorpay)
 or [contact us](mailto:integrations@razorpay.com?subject=Help with iOS Integration) to help you with integrations.
