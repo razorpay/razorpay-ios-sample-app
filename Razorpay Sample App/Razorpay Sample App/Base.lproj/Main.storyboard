@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,11 +18,116 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mmY-kq-XaM">
+                                <rect key="frame" x="196" y="40" width="208" height="221"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="Du2-Id-EjV"/>
+                                    <constraint firstAttribute="height" constant="221" id="Hnn-DL-9SE"/>
+                                    <constraint firstAttribute="width" secondItem="mmY-kq-XaM" secondAttribute="height" multiplier="208:221" id="V2B-4E-ZiO"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7l-Oa-1Xe">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <color key="backgroundColor" red="0.20784313725490194" green="0.58039215686274503" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="cgQ-gR-hSs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <state key="normal" title="PAY">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dov-Xx-ORr">
+                                <rect key="frame" x="0.0" y="261" width="600" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rs. 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GyT-kC-k9R">
+                                <rect key="frame" x="30" y="288" width="44" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qLK-ws-WoT">
+                                <rect key="frame" x="0.0" y="312" width="600" height="13"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fine Tshirt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozD-3p-Fnc">
+                                <rect key="frame" x="30" y="325" width="85" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SQN-qd-I2v">
+                                <rect key="frame" x="0.0" y="347" width="600" height="27"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ua-Ff-wiI">
+                                <rect key="frame" x="30" y="374" width="540" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="95q-h1-UiE"/>
+                                </constraints>
+                                <string key="text">Razorpay is an online payment gateway which allows Indian businesses to collect payments online through credit card, debit card, netbanking and popular wallets like MobiKwik, etc.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QOH-Aw-MI3">
+                                <rect key="frame" x="0.0" y="421" width="600" height="22"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a real transaction. The amount will be refunded in 4-5 days." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cou-jq-AAo">
+                                <rect key="frame" x="30" y="443" width="540" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="bhx-Uf-ma6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6ua-Ff-wiI" firstAttribute="top" secondItem="SQN-qd-I2v" secondAttribute="bottom" id="18e-CG-HOn"/>
+                            <constraint firstItem="Cou-jq-AAo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="trailing" multiplier="1/20" id="3b9-Rw-lbf"/>
+                            <constraint firstItem="Dov-Xx-ORr" firstAttribute="top" secondItem="mmY-kq-XaM" secondAttribute="bottom" id="6IZ-fK-nLv"/>
+                            <constraint firstItem="ozD-3p-Fnc" firstAttribute="top" secondItem="qLK-ws-WoT" secondAttribute="bottom" id="BI2-a3-VZg"/>
+                            <constraint firstItem="GyT-kC-k9R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="trailing" multiplier="1/20" id="BYM-eg-DMW"/>
+                            <constraint firstItem="Cou-jq-AAo" firstAttribute="top" secondItem="QOH-Aw-MI3" secondAttribute="bottom" id="C8a-Ma-b35"/>
+                            <constraint firstItem="QOH-Aw-MI3" firstAttribute="top" secondItem="6ua-Ff-wiI" secondAttribute="bottom" id="Hty-ST-jfj"/>
+                            <constraint firstItem="mmY-kq-XaM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JYE-lW-jag"/>
+                            <constraint firstItem="qLK-ws-WoT" firstAttribute="top" secondItem="GyT-kC-k9R" secondAttribute="bottom" id="KDC-Ba-eMD"/>
+                            <constraint firstItem="ozD-3p-Fnc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="trailing" multiplier="1/20" id="P2t-56-yr7"/>
+                            <constraint firstItem="mmY-kq-XaM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Uxp-NT-CMX"/>
+                            <constraint firstItem="Cou-jq-AAo" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" multiplier="19/20" id="V9r-PS-IVY"/>
+                            <constraint firstItem="Dov-Xx-ORr" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="25.3/568" id="W4L-lu-N6U"/>
+                            <constraint firstItem="QOH-Aw-MI3" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="20.3/568" id="XIb-ZL-dQo"/>
+                            <constraint firstItem="Dov-Xx-ORr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aMI-dd-l5t"/>
+                            <constraint firstAttribute="trailing" secondItem="qLK-ws-WoT" secondAttribute="trailing" id="anN-va-C2l"/>
+                            <constraint firstItem="SQN-qd-I2v" firstAttribute="top" secondItem="ozD-3p-Fnc" secondAttribute="bottom" id="btc-gx-c5W"/>
+                            <constraint firstAttribute="bottom" secondItem="t7l-Oa-1Xe" secondAttribute="bottom" id="eVI-Nh-fxn"/>
+                            <constraint firstItem="qLK-ws-WoT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="etx-tC-ckb"/>
+                            <constraint firstAttribute="trailing" secondItem="t7l-Oa-1Xe" secondAttribute="trailing" id="koz-Od-EK9"/>
+                            <constraint firstItem="t7l-Oa-1Xe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oWw-f6-6zY"/>
+                            <constraint firstItem="SQN-qd-I2v" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="25/568" id="pby-1F-DeX"/>
+                            <constraint firstItem="SQN-qd-I2v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qes-ny-oPc"/>
+                            <constraint firstItem="GyT-kC-k9R" firstAttribute="top" secondItem="Dov-Xx-ORr" secondAttribute="bottom" id="qix-ht-QTB"/>
+                            <constraint firstItem="qLK-ws-WoT" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="12.3/568" id="qn7-fT-RNK"/>
+                            <constraint firstAttribute="trailing" secondItem="Dov-Xx-ORr" secondAttribute="trailing" id="vBo-4R-4d5"/>
+                            <constraint firstItem="6ua-Ff-wiI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="trailing" multiplier="1/20" id="w7A-e6-ekk"/>
+                            <constraint firstItem="QOH-Aw-MI3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wLj-DJ-E3C"/>
+                            <constraint firstItem="6ua-Ff-wiI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" multiplier="19/20" id="wqR-Xe-Wc2"/>
+                            <constraint firstAttribute="trailing" secondItem="SQN-qd-I2v" secondAttribute="trailing" id="xM7-pC-EGe"/>
+                            <constraint firstAttribute="trailing" secondItem="QOH-Aw-MI3" secondAttribute="trailing" id="zUW-jc-NYk"/>
+                        </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="337"/>
         </scene>
     </scenes>
 </document>
