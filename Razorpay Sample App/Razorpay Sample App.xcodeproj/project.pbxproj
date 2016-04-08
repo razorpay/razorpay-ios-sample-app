@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		920B331F1C9D208900D1EDEF /* Razorpay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 920B331E1C9D208900D1EDEF /* Razorpay.framework */; };
+		921DAD541CB55413004570B1 /* Razorpay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921DAD531CB55413004570B1 /* Razorpay.framework */; };
+		92588F541CB635BB00B97262 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92588F531CB635BB00B97262 /* CoreTelephony.framework */; };
+		92588F561CB635C100B97262 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92588F551CB635C100B97262 /* SystemConfiguration.framework */; };
+		92588F5C1CB6465700B97262 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 92588F5B1CB6465700B97262 /* logo.png */; };
 		92EA34491C9C2CE300508C04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92EA34481C9C2CE300508C04 /* main.m */; };
 		92EA344C1C9C2CE300508C04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92EA344B1C9C2CE300508C04 /* AppDelegate.m */; };
 		92EA344F1C9C2CE300508C04 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92EA344E1C9C2CE300508C04 /* ViewController.m */; };
@@ -16,7 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		920B331E1C9D208900D1EDEF /* Razorpay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Razorpay.framework; sourceTree = "<group>"; };
+		921DAD531CB55413004570B1 /* Razorpay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Razorpay.framework; sourceTree = "<group>"; };
+		92588F531CB635BB00B97262 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		92588F551CB635C100B97262 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		92588F5B1CB6465700B97262 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		92EA34441C9C2CE300508C04 /* Razorpay Sample App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Razorpay Sample App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92EA34481C9C2CE300508C04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		92EA344A1C9C2CE300508C04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,7 +39,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				920B331F1C9D208900D1EDEF /* Razorpay.framework in Frameworks */,
+				92588F561CB635C100B97262 /* SystemConfiguration.framework in Frameworks */,
+				92588F541CB635BB00B97262 /* CoreTelephony.framework in Frameworks */,
+				921DAD541CB55413004570B1 /* Razorpay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +51,8 @@
 		92EA343B1C9C2CE300508C04 = {
 			isa = PBXGroup;
 			children = (
+				92588F551CB635C100B97262 /* SystemConfiguration.framework */,
+				92588F531CB635BB00B97262 /* CoreTelephony.framework */,
 				92EA34461C9C2CE300508C04 /* Razorpay Sample App */,
 				92EA34451C9C2CE300508C04 /* Products */,
 			);
@@ -74,7 +84,8 @@
 		92EA34471C9C2CE300508C04 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				920B331E1C9D208900D1EDEF /* Razorpay.framework */,
+				92588F5B1CB6465700B97262 /* logo.png */,
+				921DAD531CB55413004570B1 /* Razorpay.framework */,
 				92EA34481C9C2CE300508C04 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -111,6 +122,7 @@
 				TargetAttributes = {
 					92EA34431C9C2CE300508C04 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = J34GQA9Q29;
 					};
 				};
 			};
@@ -139,6 +151,7 @@
 			files = (
 				92EA34541C9C2CE300508C04 /* Assets.xcassets in Resources */,
 				92EA34521C9C2CE300508C04 /* Main.storyboard in Resources */,
+				92588F5C1CB6465700B97262 /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +202,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -232,6 +246,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -254,16 +269,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Akshay Bhalotia (L888HQGR5L)";
 				CURRENT_PROJECT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/**",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Razorpay",
+					Sample,
+					App,
 				);
 				INFOPLIST_FILE = "Razorpay Sample App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Razorpay.SampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE = "77c155fe-c578-44f3-a918-c074f1dfb56a";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -273,16 +293,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Akshay Bhalotia (L888HQGR5L)";
 				CURRENT_PROJECT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/**",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Razorpay",
+					Sample,
+					App,
 				);
 				INFOPLIST_FILE = "Razorpay Sample App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Razorpay.SampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE = "77c155fe-c578-44f3-a918-c074f1dfb56a";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
