@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		920CF4CA1CE4C96E00F3ABEA /* Razorpay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 920CF4C91CE4C96E00F3ABEA /* Razorpay.framework */; };
+		92272CA01D2D4A92003E22CA /* Razorpay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92272C9F1D2D4A92003E22CA /* Razorpay.framework */; };
 		92F460421CBE3358006D16C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92EA344E1C9C2CE300508C04 /* ViewController.m */; };
 		92F460431CBE3358006D16C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92EA344B1C9C2CE300508C04 /* AppDelegate.m */; };
 		92F460441CBE3358006D16C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92EA34481C9C2CE300508C04 /* main.m */; };
@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		920CF4C91CE4C96E00F3ABEA /* Razorpay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Razorpay.framework; sourceTree = "<group>"; };
+		92272C9F1D2D4A92003E22CA /* Razorpay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Razorpay.framework; sourceTree = "<group>"; };
 		92588F531CB635BB00B97262 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		92588F551CB635C100B97262 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		92588F5B1CB6465700B97262 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92F460461CBE3358006D16C0 /* SystemConfiguration.framework in Frameworks */,
-				920CF4CA1CE4C96E00F3ABEA /* Razorpay.framework in Frameworks */,
+				92272CA01D2D4A92003E22CA /* Razorpay.framework in Frameworks */,
 				92F460471CBE3358006D16C0 /* CoreTelephony.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,7 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				92588F5B1CB6465700B97262 /* logo.png */,
-				920CF4C91CE4C96E00F3ABEA /* Razorpay.framework */,
+				92272C9F1D2D4A92003E22CA /* Razorpay.framework */,
 				92EA34481C9C2CE300508C04 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -296,6 +296,9 @@
 					"$(PROJECT_DIR)/Razorpay",
 					Sample,
 					App,
+					"$(PROJECT_DIR)/Razorpay",
+					Sample,
+					App,
 				);
 				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -318,6 +321,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/**",
 					"$(inherited)",
+					"$(PROJECT_DIR)/Razorpay",
+					Sample,
+					App,
 					"$(PROJECT_DIR)/Razorpay",
 					Sample,
 					App,
