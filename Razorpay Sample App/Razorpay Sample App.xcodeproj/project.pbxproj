@@ -31,7 +31,7 @@
 		92EA34511C9C2CE300508C04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92EA34531C9C2CE300508C04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92F460501CBE3358006D16C0 /* Razorpay Demonstration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Razorpay Demonstration.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		92F460511CBE3359006D16C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "/Users/akshaybhalotia/Akshay/razorpay-ios-sample-app/Razorpay Sample App/Info.plist"; sourceTree = "<absolute>"; };
+		92F460511CBE3359006D16C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
