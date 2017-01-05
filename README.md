@@ -7,9 +7,6 @@ The app built from code in this repository can be found on the AppStore.
 
 [razorpay.com/mobile](https://razorpay.com/mobile)
 
-## Releases
-Releases are available on [releases](https://github.com/razorpay/razorpay-ios-sample-app/releases) page.
-
 ## Contributing
 
 See the [CONTRIBUTING] document.
