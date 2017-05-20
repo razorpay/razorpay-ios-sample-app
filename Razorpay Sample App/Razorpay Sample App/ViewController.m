@@ -18,9 +18,14 @@ static NSString *const SUCCESS_MESSAGE =
 static NSString *const FAILURE_TITLE = @"Uh-Oh!";
 static NSString *const FAILURE_MESSAGE =
     @"Your payment failed due to an error.\nCode: %d\nDescription: %@";
+static NSString *const EXTERNAL_METHOD_TITLE = @"Umm?";
+static NSString *const EXTERNAL_METHOD_MESSAGE =
+    @"You selected %@, which is not supported by Razorpay at the moment.\nDo "
+    @"you want to handle it separately?";
 static NSString *const OK_BUTTON_TITLE = @"OK";
 
-@interface ViewController () <RazorpayPaymentCompletionProtocol> {
+@interface ViewController () <RazorpayPaymentCompletionProtocol,
+                              ExternalWalletSelectionProtocol> {
   Razorpay *razorpay;
 }
 
@@ -32,6 +37,7 @@ static NSString *const OK_BUTTON_TITLE = @"OK";
   [super viewDidLoad];
   // Do any additional setup after loading the view, typically from a nib.
   razorpay = [Razorpay initWithKey:KEY_ID andDelegate:self];
+  [razorpay setExternalWalletSelectionDelegate:self];
 }
 
 - (IBAction)payButtonPressed:(id)sender {
@@ -42,6 +48,7 @@ static NSString *const OK_BUTTON_TITLE = @"OK";
     @"description" : @"Fine T-shirt",
     @"image" : logo,
     @"name" : @"Razorpay",
+    @"external" : @{@"wallets" : @[ @"paytm" ]},
     @"prefill" :
         @{@"email" : @"contact@razorpay.com", @"contact" : @"18002700323"},
     @"theme" : @{@"color" : @"#3594E2"}
@@ -60,6 +67,13 @@ static NSString *const OK_BUTTON_TITLE = @"OK";
   [self showAlertWithTitle:FAILURE_TITLE
                 andMessage:[NSString
                                stringWithFormat:FAILURE_MESSAGE, code, str]];
+}
+
+- (void)onExternalWalletSelected:(NSString *)walletName
+                 WithPaymentData:(NSDictionary *)paymentData {
+  [self showAlertWithTitle:EXTERNAL_METHOD_TITLE
+                andMessage:[NSString stringWithFormat:EXTERNAL_METHOD_MESSAGE,
+                                                      walletName]];
 }
 
 - (void)showAlertWithTitle:(NSString *)title andMessage:(NSString *)message {
