@@ -32,4 +32,4 @@ The names and logos for Razorpay are trademarks of Razorpay Software Pvt. Ltd.
 
 We :heart: open source software!
 See [our other supported plugins / SDKs](https://github.com/razorpay)
-or [contact us](mailto:integrations@razorpay.com?subject=Help with iOS Integration) to help you with integrations.
+or [contact us](mailto:integrations@razorpay.com?subject=Help%20with%20iOS%20Integration) to help you with integrations.
