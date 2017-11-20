@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import <Razorpay/Razorpay.h>
-#import <Razorpay/RazorpayPaymentCompletionProtocol.h>
 
 static NSString *const KEY_ID =
     @"rzp_live_ILgsfZCZoFIKMb"; // @"rzp_test_1DP5mmOlF5G5ag";
