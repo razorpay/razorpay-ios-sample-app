@@ -5,7 +5,7 @@ The app built from code in this repository can be found on the AppStore.
 
 ## Features | Docs
 
-[razorpay.com/mobile](https://razorpay.com/mobile)
+[Razorpay iOS Checkout docs](https://razorpay.com/docs/ios/)
 
 ## Contributing
 
