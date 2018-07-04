@@ -8,7 +8,7 @@ The app built from code in this repository can be found on the AppStore.
 [Razorpay iOS Checkout docs](https://razorpay.com/docs/ios/)
 
 Videos showing walkthrough for integration can be found here:
-[Integration videos] (https://razorpay.com/docs/ios/integration-videos/)
+[Integration videos](https://razorpay.com/docs/ios/integration-videos/)
 
 
 ## Contributing
