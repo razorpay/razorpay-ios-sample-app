@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FRR-sh-rvZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sample Application-->
+        <scene sceneID="gol-UE-547">
+            <objects>
+                <viewController id="sGO-iB-cWx" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TgV-mn-xS4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₹ 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEB-S4-KS1">
+                                <rect key="frame" x="174" y="353.5" width="27" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fine Tshirt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9w-DO-e9N">
+                                <rect key="frame" x="16" y="387.5" width="343" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a real transaction. The amount will be refunded in 4-5 days." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oq6-Ri-BAR">
+                                <rect key="frame" x="20" y="502" width="335" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tshirt" translatesAutoresizingMaskIntoConstraints="NO" id="SJ3-nS-dhS">
+                                <rect key="frame" x="87.5" y="113.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SJ3-nS-dhS" secondAttribute="height" multiplier="1:1" id="HFz-1B-LNA"/>
+                                    <constraint firstAttribute="width" constant="200" id="xOK-rG-cll"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hY1-zb-WbP">
+                                <rect key="frame" x="20" y="563.5" width="335" height="34"/>
+                                <color key="backgroundColor" red="0.32156862749999998" green="0.56078431370000004" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Pay"/>
+                                <connections>
+                                    <action selector="payButtonPressed:" destination="sGO-iB-cWx" eventType="touchUpInside" id="wau-Iy-M5S"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knG-Kj-77M">
+                                <rect key="frame" x="20" y="429.5" width="335" height="62.5"/>
+                                <string key="text">Razorpay is an online payment gateway which allows Indian businesses to collect payments online through credit card, debit card, netbanking and popular wallets like MobiKwik, etc.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Oq6-Ri-BAR" firstAttribute="trailing" secondItem="knG-Kj-77M" secondAttribute="trailing" id="0XR-A8-59Y"/>
+                            <constraint firstItem="hY1-zb-WbP" firstAttribute="top" secondItem="Oq6-Ri-BAR" secondAttribute="bottom" constant="30" id="3lH-Ff-ezI"/>
+                            <constraint firstItem="hY1-zb-WbP" firstAttribute="leading" secondItem="Oq6-Ri-BAR" secondAttribute="leading" id="67r-a8-p97"/>
+                            <constraint firstItem="hY1-zb-WbP" firstAttribute="trailing" secondItem="Oq6-Ri-BAR" secondAttribute="trailing" id="6at-fP-YRm"/>
+                            <constraint firstItem="pEB-S4-KS1" firstAttribute="centerX" secondItem="Es6-b3-mKZ" secondAttribute="centerX" id="7sG-Dq-7Vn"/>
+                            <constraint firstItem="pEB-S4-KS1" firstAttribute="top" secondItem="SJ3-nS-dhS" secondAttribute="bottom" constant="40" id="AM1-H4-ynP"/>
+                            <constraint firstItem="Es6-b3-mKZ" firstAttribute="trailing" secondItem="z9w-DO-e9N" secondAttribute="trailing" constant="16" id="ARO-LG-sLh"/>
+                            <constraint firstItem="Es6-b3-mKZ" firstAttribute="trailing" secondItem="knG-Kj-77M" secondAttribute="trailing" constant="20" id="JJx-oh-Auk"/>
+                            <constraint firstItem="z9w-DO-e9N" firstAttribute="leading" secondItem="Es6-b3-mKZ" secondAttribute="leading" constant="16" id="KTz-tK-tSz"/>
+                            <constraint firstItem="z9w-DO-e9N" firstAttribute="centerX" secondItem="pEB-S4-KS1" secondAttribute="centerX" id="N1p-Wf-7ty"/>
+                            <constraint firstItem="knG-Kj-77M" firstAttribute="centerX" secondItem="z9w-DO-e9N" secondAttribute="centerX" id="Se4-HX-8ks"/>
+                            <constraint firstItem="hY1-zb-WbP" firstAttribute="centerX" secondItem="Es6-b3-mKZ" secondAttribute="centerX" id="Wnb-TY-juT"/>
+                            <constraint firstItem="SJ3-nS-dhS" firstAttribute="centerX" secondItem="Es6-b3-mKZ" secondAttribute="centerX" id="gXW-ko-SOT"/>
+                            <constraint firstItem="pEB-S4-KS1" firstAttribute="centerY" secondItem="Es6-b3-mKZ" secondAttribute="centerY" id="inE-gV-KQU"/>
+                            <constraint firstItem="Oq6-Ri-BAR" firstAttribute="top" secondItem="knG-Kj-77M" secondAttribute="bottom" constant="10" id="jD9-ob-dWC"/>
+                            <constraint firstItem="Oq6-Ri-BAR" firstAttribute="leading" secondItem="knG-Kj-77M" secondAttribute="leading" id="nTH-uY-2TO"/>
+                            <constraint firstItem="knG-Kj-77M" firstAttribute="top" secondItem="z9w-DO-e9N" secondAttribute="bottom" constant="20" id="nwA-lv-7ef"/>
+                            <constraint firstItem="z9w-DO-e9N" firstAttribute="top" secondItem="pEB-S4-KS1" secondAttribute="bottom" constant="10" id="w26-YC-Sua"/>
+                            <constraint firstItem="knG-Kj-77M" firstAttribute="leading" secondItem="Es6-b3-mKZ" secondAttribute="leading" constant="20" id="xOq-5L-rnU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Es6-b3-mKZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sample Application" id="6s3-Q1-Y57"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HOJ-85-4DH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1495.2" y="323.38830584707648"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="n2j-ut-QnY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FRR-sh-rvZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5K9-Vx-6qN">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sGO-iB-cWx" kind="relationship" relationship="rootViewController" id="jna-qh-vCB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HZQ-9i-N0U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="556" y="323.38830584707648"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Tshirt" width="416" height="442"/>
+    </resources>
+</document>
