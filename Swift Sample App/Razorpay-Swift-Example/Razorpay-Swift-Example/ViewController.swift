@@ -21,9 +21,9 @@ class ViewController : UIViewController {
         super.viewDidLoad()
         self.setupCheckoutButton()
     }
+    
     // Don't use viewDidLoad method for calling open method, use viewWillAppear instead,
     // as it will give you this error - "Warning: Attempt to present < finishViewController: 0x1e56e0a0 > on < ViewController: 0x1ec3e000> whose view is not in the window hierarchy!".
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
