@@ -9,8 +9,7 @@
 #import "ViewController.h"
 #import "Razorpay/Razorpay-Swift.h"
 
-static NSString *const KEY_ID =
-    @"rzp_live_ILgsfZCZoFIKMb"; // @"rzp_test_1DP5mmOlF5G5ag";
+static NSString *const KEY_ID =@"Your Razropay Key!"; // // Sign up for a Razorpay Account(https://dashboard.razorpay.com/#/access/signin) and generate the API Keys(https://razorpay.com/docs/payment-gateway/dashboard-guide/settings/#api-keys/) from the Razorpay Dashboard.
 static NSString *const SUCCESS_TITLE = @"Yay!";
 static NSString *const SUCCESS_MESSAGE =
     @"Your payment was successful. The payment ID is %@";
