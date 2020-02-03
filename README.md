@@ -3,6 +3,15 @@
 This repository demonstrates how to integrate Razorpay's iOS Framework.
 The app built from code in this repository can be found on the AppStore.
 
+### To run the example app:
+Sign up for a Razorpay Account(https://dashboard.razorpay.com/#/access/signin) and generate the API Keys(https://razorpay.com/docs/payment-gateway/dashboard-guide/settings/#api-keys/) from the Razorpay Dashboard
+
+1. If you haven't already, sign up for a [Razorpay account](https://dashboard.razorpay.com/#/access/signin).
+2. Open `.xcodeproj` with Xcode.
+3. Fill in the `KEY_ID` constant in `./Razorpay Sample App/RazorpaySampleApp/ViewController.m` with your Razorpay [test "key"](https://razorpay.com/docs/payment-gateway/dashboard-guide/settings/#api-keys/). This key should start with `rzp_test`.
+
+After this is done, you can make test payments through the app and see them in your [Razorpay dashboard](https://dashboard.razorpay.com).  
+
 ## Features | Docs
 
 [Razorpay iOS Checkout docs](https://razorpay.com/docs/ios/)
