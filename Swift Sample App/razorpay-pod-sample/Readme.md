@@ -10,9 +10,13 @@ Sign up for a Razorpay Account(https://dashboard.razorpay.com/#/access/signin) a
 2. Open .xcworkspace (not .xcodeproj) with Xcode.
 3. Fill in the `KEY_ID` constant in `./Razorpay Sample App/RazorpaySampleApp/ViewController.m` with your Razorpay [test "key"](https://razorpay.com/docs/payment-gateway/dashboard-guide/settings/#api-keys/). This key should start with `rzp_test`.
 
-4. Whenever you are ready to go live, don't forget to update test key to [live "key"](https://razorpay.com/docs/payment-gateway/dashboard-guide/settings/#api-keys/). This key should start with `rzp_live`.
-
 After this is done, you can make test payments through the app and see them in your [Razorpay dashboard](https://dashboard.razorpay.com).  
+
+ <p align="center">
+ <img align="center" alt="face" src="https://github.com/razorpay/razorpay-ios-sample-app/blob/standard_swift/resources/ylwYzbC.gif" />
+</p>
+
+4. Whenever you are ready to go live, don't forget to update test key to [live "key"](https://razorpay.com/docs/payment-gateway/dashboard-guide/settings/#api-keys/). This key should start with `rzp_live`.
 
 ## Features | Docs
 
