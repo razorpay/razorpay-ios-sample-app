@@ -20,6 +20,7 @@ Videos showing walkthrough for integration can be found here:
 [Integration videos](https://razorpay.com/docs/ios/integration-videos/)
 
 
+
 ## Contributing
 
 See the [CONTRIBUTING] document.
@@ -30,7 +31,7 @@ Thank you, [contributors]!
 
 ## License
 
-Razorpay iOS Sample App is Copyright (c) 2016 Razorpay Software Pvt. Ltd.
+Razorpay iOS Sample App is Copyright (c) 2020 Razorpay Software Pvt. Ltd.
 It is free software, and may be redistributed
 under the terms specified in the [LICENSE] file.
 
