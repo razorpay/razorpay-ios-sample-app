@@ -24,7 +24,7 @@ static NSString *const OK_BUTTON_TITLE = @"OK";
 
 @interface ViewController () <RazorpayPaymentCompletionProtocol,
                               ExternalWalletSelectionProtocol> {
-  Razorpay *razorpay;
+  RazorpayCheckout *razorpay;
 }
 
 @end
@@ -34,7 +34,7 @@ static NSString *const OK_BUTTON_TITLE = @"OK";
 - (void)viewDidLoad {
   [super viewDidLoad];
   // Do any additional setup after loading the view, typically from a nib.
-  razorpay = [Razorpay initWithKey:KEY_ID andDelegate:self];
+  razorpay = [RazorpayCheckout initWithKey:KEY_ID andDelegate:self];
   [razorpay setExternalWalletSelectionDelegate:self];
 }
 
