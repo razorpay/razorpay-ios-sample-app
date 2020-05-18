@@ -13,8 +13,8 @@
 		0C1A11DA23E408DF0015A0BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1A11D823E408DF0015A0BD /* Main.storyboard */; };
 		0C1A11DC23E408E40015A0BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C1A11DB23E408E40015A0BD /* Assets.xcassets */; };
 		0C1A11DF23E408E40015A0BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1A11DD23E408E40015A0BD /* LaunchScreen.storyboard */; };
-		0C89ACF4246F94A70097C815 /* Razorpay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C89ACF3246F94A70097C815 /* Razorpay.xcframework */; };
-		0C89ACF5246F94A70097C815 /* Razorpay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C89ACF3246F94A70097C815 /* Razorpay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		0C89ACFC247043850097C815 /* Razorpay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C89ACFA247043820097C815 /* Razorpay.xcframework */; };
+		0C89ACFD247043850097C815 /* Razorpay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C89ACFA247043820097C815 /* Razorpay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0C89ACF5246F94A70097C815 /* Razorpay.xcframework in Embed Frameworks */,
+				0C89ACFD247043850097C815 /* Razorpay.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,7 +40,7 @@
 		0C1A11DB23E408E40015A0BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C1A11DE23E408E40015A0BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C1A11E023E408E40015A0BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C89ACF3246F94A70097C815 /* Razorpay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Razorpay.xcframework; path = "../../../../../Desktop/Released SDKs/Standard Checkout/Swift 5.2/Razorpay.xcframework"; sourceTree = "<group>"; };
+		0C89ACFA247043820097C815 /* Razorpay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Razorpay.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C89ACF4246F94A70097C815 /* Razorpay.xcframework in Frameworks */,
+				0C89ACFC247043850097C815 /* Razorpay.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +89,7 @@
 		0C89ACF2246F94A70097C815 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0C89ACF3246F94A70097C815 /* Razorpay.xcframework */,
+				0C89ACFA247043820097C815 /* Razorpay.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

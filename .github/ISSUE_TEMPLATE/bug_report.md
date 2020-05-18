@@ -1,6 +1,6 @@
 ---
 name: "🐛 Bug Report"
-about: Report a reproducible bug or regression in Razorpay Flutter plugin.
+about: Report a reproducible bug or regression in Razorpay Sample Example.
 title: ''
 labels: 'Needs: Triage :mag:'
 
@@ -19,11 +19,13 @@ WILL LIKELY BE CLOSED.
 ## Description
 
 Please provide a clear and concise description of what the bug is. Include screenshots if needed.
-Please test using the latest Razorpay pod release to make sure your issue has not already been fixed. 
+Please test using the latest Razorpay SDK release to make sure your issue has not already been fixed. 
 
-## Razorpay pod Version :
+## Razorpay SDK Version :
 
-Open `podfile` for checking the razorpay-pod version if it's not mentioned their then open `podfile.lock` and copy the pod version here. 
+Step 1 - Open `Razorpay.framework` and open `info.plist`,
+Step 2 - Copy `Bundle versions string, short` here. 
+Step 3 - If you are having `Razorpay.xcframework` then open `ios-armv7_arm64`, you will find  `Razorpay.framework`, then follow Step 1.
 
 ## Xcode Version :
 Open Xcode > Go to `About Xcode` > copy the Xcode version here.
