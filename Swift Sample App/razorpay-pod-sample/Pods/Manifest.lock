@@ -1,5 +1,5 @@
 PODS:
-  - razorpay-pod (1.1.4)
+  - razorpay-pod (1.1.5)
 
 DEPENDENCIES:
   - razorpay-pod
@@ -9,7 +9,7 @@ SPEC REPOS:
     - razorpay-pod
 
 SPEC CHECKSUMS:
-  razorpay-pod: 592624080178be4c6121216508e7857fc245f4b8
+  razorpay-pod: 31dd24ddb70275d82be12527b45001f9bc9f1be2
 
 PODFILE CHECKSUM: 99ba30812176949880339044c2cab90deef9ca6b
 
