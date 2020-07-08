@@ -21,14 +21,25 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Integrate Razorpay with your business." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSO-At-AXR">
                                         <rect key="frame" x="20" y="16" width="378" height="20"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                        <color key="textColor" red="0.086274509803921567" green="0.18431372549019609" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2Y-7S-FRT">
+                                        <rect key="frame" x="0.0" y="0.0" width="392" height="52"/>
+                                        <state key="normal" image="next icon"/>
+                                        <connections>
+                                            <action selector="toSafariControllerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KDR-eW-kXs"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.95294117647058818" green="0.97254901960784312" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.29411764705882354" green="0.58431372549019611" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="m2Y-7S-FRT" secondAttribute="bottom" id="5cD-mJ-2Fh"/>
+                                    <constraint firstAttribute="trailing" secondItem="m2Y-7S-FRT" secondAttribute="trailing" constant="22" id="5fA-2H-zc1"/>
+                                    <constraint firstItem="m2Y-7S-FRT" firstAttribute="leading" secondItem="hg3-ap-O4y" secondAttribute="leading" id="NN8-6u-epK"/>
                                     <constraint firstAttribute="trailing" secondItem="LSO-At-AXR" secondAttribute="trailing" constant="16" id="WIT-4L-hsC"/>
                                     <constraint firstAttribute="height" constant="52" id="ado-RR-wwe"/>
+                                    <constraint firstItem="m2Y-7S-FRT" firstAttribute="top" secondItem="hg3-ap-O4y" secondAttribute="top" id="che-hN-Vim"/>
                                     <constraint firstItem="LSO-At-AXR" firstAttribute="leading" secondItem="hg3-ap-O4y" secondAttribute="leading" constant="20" id="daW-He-Cya"/>
                                     <constraint firstItem="LSO-At-AXR" firstAttribute="top" secondItem="hg3-ap-O4y" secondAttribute="top" constant="16" id="lGV-XT-1so"/>
                                     <constraint firstAttribute="bottom" secondItem="LSO-At-AXR" secondAttribute="bottom" constant="16" id="uco-vB-qrH"/>
@@ -641,6 +652,7 @@
     <resources>
         <image name="Vector" width="16" height="16"/>
         <image name="image" width="80" height="80"/>
+        <image name="next icon" width="6" height="10"/>
         <image name="placeholder" width="183" height="183"/>
     </resources>
 </document>

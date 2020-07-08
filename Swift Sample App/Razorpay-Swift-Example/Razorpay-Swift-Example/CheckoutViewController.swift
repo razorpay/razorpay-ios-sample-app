@@ -8,6 +8,7 @@
 
 import UIKit
 import Razorpay
+import SafariServices
 
 class CheckoutViewController: UIViewController {
     
@@ -45,6 +46,13 @@ class CheckoutViewController: UIViewController {
         if let controller = segue.destination as? SettingsTableViewController {
             controller.delegate = self
         }
+    }
+    
+    @IBAction func toSafariControllerAction(_ sender: Any) {
+        guard let url = URL(string: "https://docs.razorpay.com") else { return }
+        let controller = SFSafariViewController(url: url)
+        self.present(controller, animated: true, completion: nil)
+        controller.delegate = self
     }
     
     
@@ -117,5 +125,12 @@ extension CheckoutViewController {
             alertController.addAction(OKAction)
             self.present(alertController, animated: true, completion: nil)
         }
+    }
+}
+
+extension CheckoutViewController : SFSafariViewControllerDelegate {
+    
+    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+        controller.dismiss(animated: true, completion: nil)
     }
 }
