@@ -10,11 +10,12 @@
 		0C1A11D323E408DF0015A0BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1A11D223E408DF0015A0BD /* AppDelegate.swift */; };
 		0C1A11D523E408DF0015A0BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1A11D423E408DF0015A0BD /* SceneDelegate.swift */; };
 		0C1A11D723E408DF0015A0BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1A11D623E408DF0015A0BD /* ViewController.swift */; };
-		0C1A11DA23E408DF0015A0BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1A11D823E408DF0015A0BD /* Main.storyboard */; };
 		0C1A11DC23E408E40015A0BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C1A11DB23E408E40015A0BD /* Assets.xcassets */; };
 		0C1A11DF23E408E40015A0BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1A11DD23E408E40015A0BD /* LaunchScreen.storyboard */; };
 		0C89ACFC247043850097C815 /* Razorpay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C89ACFA247043820097C815 /* Razorpay.xcframework */; };
 		0C89ACFD247043850097C815 /* Razorpay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C89ACFA247043820097C815 /* Razorpay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		0CE1C1E224B58B7600D88A05 /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1C1E124B58B7600D88A05 /* BrowseViewController.swift */; };
+		0CE1C1E524B5ABC200D88A05 /* CusotmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1C1E424B5ABC200D88A05 /* CusotmButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,11 +37,12 @@
 		0C1A11D223E408DF0015A0BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C1A11D423E408DF0015A0BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0C1A11D623E408DF0015A0BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0C1A11D923E408DF0015A0BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C1A11DB23E408E40015A0BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C1A11DE23E408E40015A0BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C1A11E023E408E40015A0BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C89ACFA247043820097C815 /* Razorpay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Razorpay.xcframework; sourceTree = "<group>"; };
+		0CE1C1E124B58B7600D88A05 /* BrowseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
+		0CE1C1E424B5ABC200D88A05 /* CusotmButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CusotmButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +77,11 @@
 		0C1A11D123E408DF0015A0BD /* Razorpay-Swift-Example */ = {
 			isa = PBXGroup;
 			children = (
+				0CE1C1E324B5ABB300D88A05 /* Modals */,
+				0CE1C1E124B58B7600D88A05 /* BrowseViewController.swift */,
 				0C1A11D223E408DF0015A0BD /* AppDelegate.swift */,
 				0C1A11D423E408DF0015A0BD /* SceneDelegate.swift */,
 				0C1A11D623E408DF0015A0BD /* ViewController.swift */,
-				0C1A11D823E408DF0015A0BD /* Main.storyboard */,
 				0C1A11DB23E408E40015A0BD /* Assets.xcassets */,
 				0C1A11DD23E408E40015A0BD /* LaunchScreen.storyboard */,
 				0C1A11E023E408E40015A0BD /* Info.plist */,
@@ -92,6 +95,14 @@
 				0C89ACFA247043820097C815 /* Razorpay.xcframework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0CE1C1E324B5ABB300D88A05 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				0CE1C1E424B5ABC200D88A05 /* CusotmButton.swift */,
+			);
+			path = Modals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +166,6 @@
 			files = (
 				0C1A11DF23E408E40015A0BD /* LaunchScreen.storyboard in Resources */,
 				0C1A11DC23E408E40015A0BD /* Assets.xcassets in Resources */,
-				0C1A11DA23E408DF0015A0BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,21 +178,15 @@
 			files = (
 				0C1A11D723E408DF0015A0BD /* ViewController.swift in Sources */,
 				0C1A11D323E408DF0015A0BD /* AppDelegate.swift in Sources */,
+				0CE1C1E224B58B7600D88A05 /* BrowseViewController.swift in Sources */,
 				0C1A11D523E408DF0015A0BD /* SceneDelegate.swift in Sources */,
+				0CE1C1E524B5ABC200D88A05 /* CusotmButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0C1A11D823E408DF0015A0BD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0C1A11D923E408DF0015A0BD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0C1A11DD23E408E40015A0BD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
