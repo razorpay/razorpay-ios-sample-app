@@ -15,6 +15,10 @@
 		0C1A11DF23E408E40015A0BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1A11DD23E408E40015A0BD /* LaunchScreen.storyboard */; };
 		0C89ACFC247043850097C815 /* Razorpay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C89ACFA247043820097C815 /* Razorpay.xcframework */; };
 		0C89ACFD247043850097C815 /* Razorpay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C89ACFA247043820097C815 /* Razorpay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		0CE1C1E724B5C26300D88A05 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1C1E624B5C26300D88A05 /* CheckoutViewController.swift */; };
+		0CE1C1EB24B5C3C700D88A05 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1C1EA24B5C3C700D88A05 /* SettingsTableViewController.swift */; };
+		0CE1C1EE24B5E80C00D88A05 /* SwiftColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1C1ED24B5E80C00D88A05 /* SwiftColorPickerViewController.swift */; };
+		0CE1C1F024B5FB0300D88A05 /* UIcolorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE1C1EF24B5FB0300D88A05 /* UIcolorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +45,10 @@
 		0C1A11DE23E408E40015A0BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C1A11E023E408E40015A0BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C89ACFA247043820097C815 /* Razorpay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Razorpay.xcframework; sourceTree = "<group>"; };
+		0CE1C1E624B5C26300D88A05 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		0CE1C1EA24B5C3C700D88A05 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		0CE1C1ED24B5E80C00D88A05 /* SwiftColorPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftColorPickerViewController.swift; sourceTree = "<group>"; };
+		0CE1C1EF24B5FB0300D88A05 /* UIcolorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIcolorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +83,11 @@
 		0C1A11D123E408DF0015A0BD /* Razorpay-Swift-Example */ = {
 			isa = PBXGroup;
 			children = (
+				0CE1C1EC24B5E7E800D88A05 /* Resources */,
 				0C1A11D223E408DF0015A0BD /* AppDelegate.swift */,
 				0C1A11D423E408DF0015A0BD /* SceneDelegate.swift */,
+				0CE1C1E624B5C26300D88A05 /* CheckoutViewController.swift */,
+				0CE1C1EA24B5C3C700D88A05 /* SettingsTableViewController.swift */,
 				0C1A11D623E408DF0015A0BD /* ViewController.swift */,
 				0C1A11D823E408DF0015A0BD /* Main.storyboard */,
 				0C1A11DB23E408E40015A0BD /* Assets.xcassets */,
@@ -92,6 +103,15 @@
 				0C89ACFA247043820097C815 /* Razorpay.xcframework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0CE1C1EC24B5E7E800D88A05 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0CE1C1ED24B5E80C00D88A05 /* SwiftColorPickerViewController.swift */,
+				0CE1C1EF24B5FB0300D88A05 /* UIcolorExtension.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,8 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CE1C1EE24B5E80C00D88A05 /* SwiftColorPickerViewController.swift in Sources */,
+				0CE1C1E724B5C26300D88A05 /* CheckoutViewController.swift in Sources */,
+				0CE1C1EB24B5C3C700D88A05 /* SettingsTableViewController.swift in Sources */,
 				0C1A11D723E408DF0015A0BD /* ViewController.swift in Sources */,
 				0C1A11D323E408DF0015A0BD /* AppDelegate.swift in Sources */,
+				0CE1C1F024B5FB0300D88A05 /* UIcolorExtension.swift in Sources */,
 				0C1A11D523E408DF0015A0BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +337,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3J5MJT3GNL;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Razorpay-Swift-Example",
@@ -334,6 +359,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3J5MJT3GNL;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Razorpay-Swift-Example",
