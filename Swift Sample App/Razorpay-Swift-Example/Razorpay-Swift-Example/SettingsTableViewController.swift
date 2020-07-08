@@ -22,7 +22,8 @@ extension MerchantsDetails {
     
     static func getDefaultData() -> MerchantsDetails {
         let details = MerchantsDetails(name: "Demo App",
-                                       logo: "https://pbs.twimg.com/profile_images/1271385506505347074/QIc_CCEg_400x400.jpg", color: .blue)
+                                       logo: "https://pbs.twimg.com/profile_images/1271385506505347074/QIc_CCEg_400x400.jpg",
+                                       color: .blue)
         return details
     }
 }
@@ -116,15 +117,6 @@ extension SettingsTableViewController: UITextFieldDelegate {
     }
 }
 
-extension UIViewController {
-    func setStatusBarStyle(_ style: UIStatusBarStyle) {
-        if let statusBar = UIApplication.shared.value(forKey: "statusBar") as? UIView {
-            statusBar.backgroundColor = style == .lightContent ? UIColor.black : .white
-            statusBar.setValue(style == .lightContent ? UIColor.white : .black, forKey: "foregroundColor")
-        }
-    }
-}
-
 extension SettingsTableViewController: UIPopoverPresentationControllerDelegate, SwiftColorPickerDelegate, SwiftColorPickerDataSource
 {
     // MARK: - Segue Navigation
@@ -171,5 +163,6 @@ extension SettingsTableViewController: UIPopoverPresentationControllerDelegate, 
     // MARK: Color Picker Delegate
     func colorSelectionChanged(selectedColor color: UIColor) {
         self.colorSampleViewOutlet.backgroundColor = color
+        self.colorCodeLabelOutlet.text = color.toHexString()
     }
 }
