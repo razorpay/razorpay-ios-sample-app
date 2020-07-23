@@ -15,7 +15,7 @@ class CheckoutViewController: UIViewController {
     var razorpayObj : RazorpayCheckout? = nil
     var merchantDetails : MerchantsDetails = MerchantsDetails.getDefaultData()
     
-    let razorpayKey = "rzp_test_1DP5mmOlF5G5ag" // Sign up for a Razorpay Account(https://dashboard.razorpay.com/#/access/signin) and generate the API Keys(https://razorpay.com/docs/payment-gateway/dashboard-guide/settings/#api-keys/) from the Razorpay Dashboard.
+    let razorpayKey = "rzp_live_cepk1crIu9VkJU" // Sign up for a Razorpay Account(https://dashboard.razorpay.com/#/access/signin) and generate the API Keys(https://razorpay.com/docs/payment-gateway/dashboard-guide/settings/#api-keys/) from the Razorpay Dashboard.
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,11 +60,14 @@ class CheckoutViewController: UIViewController {
         razorpayObj = RazorpayCheckout.initWithKey(razorpayKey, andDelegate: self)
         let options: [AnyHashable:Any] = [
             "prefill": [
-                "contact": "1234567890",
-                "email": "a@a.com"
+                "contact": "8867487787",
+                "email": "a@a.com",
+                "method":"app",
+                "provider":"cred",
             ],
             "image": merchantDetails.logo,
             "amount" : 100,
+//            "order_id":"order_FHpfymXMMNHlyA",
             "name": merchantDetails.name,
             "theme": [
                 "color": merchantDetails.color.toHexString()
