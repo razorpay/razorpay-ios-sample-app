@@ -15,12 +15,11 @@ class CheckoutViewController: UIViewController {
     var razorpayObj : RazorpayCheckout? = nil
     var merchantDetails : MerchantsDetails = MerchantsDetails.getDefaultData()
     
-    let razorpayKey = "" // Sign up for a Razorpay Account(https://dashboard.razorpay.com/#/access/signin) and generate the API Keys(https://razorpay.com/docs/payment-gateway/dashboard-guide/settings/#api-keys/) from the Razorpay Dashboard.
+    let razorpayKey = "rzp_test_1DP5mmOlF5G5ag" // Sign up for a Razorpay Account(https://dashboard.razorpay.com/#/access/signin) and generate the API Keys(https://razorpay.com/docs/payment-gateway/dashboard-guide/settings/#api-keys/) from the Razorpay Dashboard.
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
     
     // Don't use viewDidLoad method for calling open method, use viewWillAppear instead,
     // as it will give you this error - "Warning: Attempt to present < finishViewController: 0x1e56e0a0 > on < ViewController: 0x1ec3e000> whose view is not in the window hierarchy!".
