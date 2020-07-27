@@ -15,7 +15,7 @@ class CheckoutViewController: UIViewController {
     var razorpayObj : RazorpayCheckout? = nil
     var merchantDetails : MerchantsDetails = MerchantsDetails.getDefaultData()
     
-    let razorpayKey = "" // Sign up for a Razorpay Account(https://dashboard.razorpay.com/#/access/signin) and generate the API Keys(https://razorpay.com/docs/payment-gateway/dashboard-guide/settings/#api-keys/) from the Razorpay Dashboard.
+    let razorpayKey = "rzp_test_1DP5mmOlF5G5ag" // Sign up for a Razorpay Account(https://dashboard.razorpay.com/#/access/signin) and generate the API Keys(https://razorpay.com/docs/payment-gateway/dashboard-guide/settings/#api-keys/) from the Razorpay Dashboard.
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +40,13 @@ class CheckoutViewController: UIViewController {
     
     @IBAction func settingButtonAction(_ sender: Any) {
         self.performSegue(withIdentifier: "toSettingsSegue", sender: nil)
+    }
+    
+    // Use this function to clear user data in iOS. You can call this whenever you logout any user.
+    func clearUserData() {
+        if let rzp = self.razorpayObj {
+            rzp.clearUserData()
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
